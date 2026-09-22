@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.625rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+/* ---- Choate Student Notes global styles ---- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-navy-950 text-ink font-sans antialiased;
+  }
+  ::selection {
+    background: #d4a017;
+    color: #081a33;
+  }
+}
+
+@layer utilities {
+  /* Plex Mono meta label treatment per design.md §3 */
+  .meta-label {
+    @apply font-mono uppercase;
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+  }
+  /* Gold shimmer text (hero CHOATE, digest headings) */
+  .gold-shimmer-text {
+    background: linear-gradient(100deg, #d4a017, #f5d67b 45%, #d4a017);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gold-shimmer 6s linear infinite;
+  }
+  /* Animated gold shimmer border (digest card) */
+  .gold-shimmer-border {
+    background: linear-gradient(100deg, #d4a017, #f5d67b 45%, #d4a017);
+    background-size: 200% 100%;
+    animation: gold-shimmer 6s linear infinite;
+  }
+  .hero-gradient {
+    background: radial-gradient(120% 90% at 50% 0%, #13315c 0%, #0d2440 45%, #081a33 100%);
+  }
+  .paper-grain {
+    background-color: #f7f3ea;
+    background-image: url("/bg-texture.svg");
+    background-size: 512px 512px;
+  }
+  .desktop-damask {
+    background-color: #081a33;
+    background-image: url("/bg-texture.svg");
+    background-size: 512px 512px;
+  }
+}
+
+@keyframes gold-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* SVG line-art draw-on animation (hero arches, footer arch) */
+@keyframes stroke-draw {
+  from {
+    stroke-dashoffset: var(--draw-len, 2000);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.draw-on path,
+.draw-on circle {
+  stroke-dasharray: var(--draw-len, 2000);
+  animation: stroke-draw 2s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .draw-on path,
+  .draw-on circle {
+    animation: none;
+    stroke-dasharray: none;
+  }
+  .gold-shimmer-text,
+  .gold-shimmer-border {
+    animation: none;
+  }
+}
