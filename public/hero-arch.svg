@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" fill="none" stroke="#D4A017" stroke-width="1.5" stroke-linecap="round">
+  <!-- Layered collegiate arches receding in perspective, thin gold linework.
+       Designed for stroke-dashoffset draw-on animation. -->
+  <g opacity="0.9">
+    <!-- central grand arch -->
+    <path d="M520 900 V420 C520 300 610 210 720 210 C830 210 920 300 920 420 V900"/>
+    <path d="M560 900 V430 C560 324 632 246 720 246 C808 246 880 324 880 430 V900"/>
+    <path d="M600 900 V440 C600 348 654 282 720 282 C786 282 840 348 840 440 V900"/>
+    <!-- keystone -->
+    <path d="M712 210 H728 L724 246 H716 Z"/>
+    <!-- left receding arches -->
+    <path d="M300 900 V500 C300 420 360 356 430 356 C500 356 560 420 560 500 V900" opacity="0.65"/>
+    <path d="M332 900 V510 C332 444 376 392 430 392 C484 392 528 444 528 510 V900" opacity="0.65"/>
+    <path d="M120 900 V580 C120 520 166 470 220 470 C274 470 320 520 320 580 V900" opacity="0.4"/>
+    <!-- right receding arches -->
+    <path d="M880 900 V500 C880 420 940 356 1010 356 C1080 356 1140 420 1140 500 V900" opacity="0.65"/>
+    <path d="M912 900 V510 C912 444 956 392 1010 392 C1064 392 1108 444 1108 510 V900" opacity="0.65"/>
+    <path d="M1120 900 V580 C1120 520 1166 470 1220 470 C1274 470 1320 520 1320 580 V900" opacity="0.4"/>
+    <!-- perspective floor lines -->
+    <path d="M720 900 L60 700 M720 900 L1380 700" opacity="0.35"/>
+    <path d="M720 900 L300 640 M720 900 L1140 640" opacity="0.35"/>
+    <!-- colonnade capitals -->
+    <path d="M500 420 H540 M540 356 H572 M900 420 H940 M868 356 H900" opacity="0.6"/>
+    <!-- finial arc above -->
+    <path d="M640 180 C660 140 780 140 800 180" opacity="0.5"/>
+    <circle cx="720" cy="128" r="6" opacity="0.5"/>
+  </g>
+</svg>

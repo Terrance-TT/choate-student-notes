@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" stroke="#D4A017" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Minimal collegiate shield crest: pointed shield, arch motif, letter C -->
+  <path d="M128 18 L218 52 V128 C218 184 178 218 128 238 C78 218 38 184 38 128 V52 Z"/>
+  <path d="M128 38 L198 66 V128 C198 172 168 200 128 218 C88 200 58 172 58 128 V66 Z" stroke-width="2.5"/>
+  <!-- arch motif -->
+  <path d="M88 168 V118 C88 96 106 82 128 82 C150 82 168 96 168 118 V168" stroke-width="5"/>
+  <path d="M100 168 V120 C100 104 112 94 128 94 C144 94 156 104 156 120 V168" stroke-width="2.5"/>
+  <!-- letter C inside arch -->
+  <path d="M141 122 C138 114 128 111 121 116 C114 121 114 135 121 140 C128 145 138 142 141 134" stroke-width="4"/>
+  <!-- base line + star -->
+  <path d="M96 180 H160" stroke-width="2.5"/>
+  <path d="M128 190 L128 202 M122 196 H134" stroke-width="2.5"/>
+</svg>

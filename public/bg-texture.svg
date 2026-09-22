@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Seamless tile: tiny navy dots / damask flecks at ~4% opacity on transparent -->
+  <g fill="#0D2440" opacity="0.04">
+    <!-- dot grid, offset rows for seamless tiling -->
+    <g>
+      <circle cx="32" cy="32" r="2.2"/><circle cx="96" cy="32" r="2.2"/><circle cx="160" cy="32" r="2.2"/><circle cx="224" cy="32" r="2.2"/><circle cx="288" cy="32" r="2.2"/><circle cx="352" cy="32" r="2.2"/><circle cx="416" cy="32" r="2.2"/><circle cx="480" cy="32" r="2.2"/>
+      <circle cx="64" cy="96" r="2.2"/><circle cx="128" cy="96" r="2.2"/><circle cx="192" cy="96" r="2.2"/><circle cx="256" cy="96" r="2.2"/><circle cx="320" cy="96" r="2.2"/><circle cx="384" cy="96" r="2.2"/><circle cx="448" cy="96" r="2.2"/><circle cx="0" cy="96" r="2.2"/>
+      <circle cx="32" cy="160" r="2.2"/><circle cx="96" cy="160" r="2.2"/><circle cx="160" cy="160" r="2.2"/><circle cx="224" cy="160" r="2.2"/><circle cx="288" cy="160" r="2.2"/><circle cx="352" cy="160" r="2.2"/><circle cx="416" cy="160" r="2.2"/><circle cx="480" cy="160" r="2.2"/>
+      <circle cx="64" cy="224" r="2.2"/><circle cx="128" cy="224" r="2.2"/><circle cx="192" cy="224" r="2.2"/><circle cx="256" cy="224" r="2.2"/><circle cx="320" cy="224" r="2.2"/><circle cx="384" cy="224" r="2.2"/><circle cx="448" cy="224" r="2.2"/><circle cx="0" cy="224" r="2.2"/>
+      <circle cx="32" cy="288" r="2.2"/><circle cx="96" cy="288" r="2.2"/><circle cx="160" cy="288" r="2.2"/><circle cx="224" cy="288" r="2.2"/><circle cx="288" cy="288" r="2.2"/><circle cx="352" cy="288" r="2.2"/><circle cx="416" cy="288" r="2.2"/><circle cx="480" cy="288" r="2.2"/>
+      <circle cx="64" cy="352" r="2.2"/><circle cx="128" cy="352" r="2.2"/><circle cx="192" cy="352" r="2.2"/><circle cx="256" cy="352" r="2.2"/><circle cx="320" cy="352" r="2.2"/><circle cx="384" cy="352" r="2.2"/><circle cx="448" cy="352" r="2.2"/><circle cx="0" cy="352" r="2.2"/>
+      <circle cx="32" cy="416" r="2.2"/><circle cx="96" cy="416" r="2.2"/><circle cx="160" cy="416" r="2.2"/><circle cx="224" cy="416" r="2.2"/><circle cx="288" cy="416" r="2.2"/><circle cx="352" cy="416" r="2.2"/><circle cx="416" cy="416" r="2.2"/><circle cx="480" cy="416" r="2.2"/>
+      <circle cx="64" cy="480" r="2.2"/><circle cx="128" cy="480" r="2.2"/><circle cx="192" cy="480" r="2.2"/><circle cx="256" cy="480" r="2.2"/><circle cx="320" cy="480" r="2.2"/><circle cx="384" cy="480" r="2.2"/><circle cx="448" cy="480" r="2.2"/><circle cx="0" cy="480" r="2.2"/>
+    </g>
+    <!-- damask flecks (tiny diamonds) at cell centers -->
+    <g>
+      <path d="M64 58 l5 6 -5 6 -5 -6 Z"/><path d="M192 58 l5 6 -5 6 -5 -6 Z"/><path d="M320 58 l5 6 -5 6 -5 -6 Z"/><path d="M448 58 l5 6 -5 6 -5 -6 Z"/>
+      <path d="M0 122 l5 6 -5 6 -5 -6 Z"/><path d="M128 122 l5 6 -5 6 -5 -6 Z"/><path d="M256 122 l5 6 -5 6 -5 -6 Z"/><path d="M384 122 l5 6 -5 6 -5 -6 Z"/>
+      <path d="M64 186 l5 6 -5 6 -5 -6 Z"/><path d="M192 186 l5 6 -5 6 -5 -6 Z"/><path d="M320 186 l5 6 -5 6 -5 -6 Z"/><path d="M448 186 l5 6 -5 6 -5 -6 Z"/>
+      <path d="M128 250 l5 6 -5 6 -5 -6 Z"/><path d="M256 250 l5 6 -5 6 -5 -6 Z"/><path d="M384 250 l5 6 -5 6 -5 -6 Z"/><path d="M0 250 l5 6 -5 6 -5 -6 Z"/>
+      <path d="M64 314 l5 6 -5 6 -5 -6 Z"/><path d="M192 314 l5 6 -5 6 -5 -6 Z"/><path d="M320 314 l5 6 -5 6 -5 -6 Z"/><path d="M448 314 l5 6 -5 6 -5 -6 Z"/>
+      <path d="M128 378 l5 6 -5 6 -5 -6 Z"/><path d="M256 378 l5 6 -5 6 -5 -6 Z"/><path d="M384 378 l5 6 -5 6 -5 -6 Z"/><path d="M0 378 l5 6 -5 6 -5 -6 Z"/>
+      <path d="M64 442 l5 6 -5 6 -5 -6 Z"/><path d="M192 442 l5 6 -5 6 -5 -6 Z"/><path d="M320 442 l5 6 -5 6 -5 -6 Z"/><path d="M448 442 l5 6 -5 6 -5 -6 Z"/>
+    </g>
+  </g>
+</svg>
