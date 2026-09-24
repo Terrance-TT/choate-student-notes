@@ -223,8 +223,6 @@ function Hero({ items }: { items: Announcement[] }) {
 /* Section 2 — Summary card: titles only, straight from the data.      */
 /* No AI call — each title deep-links into the shared DetailSheet.     */
 /* ------------------------------------------------------------------ */
-const SUMMARY_TITLE_COUNT = 5;
-
 function SummaryCard({
   items,
   onOpen,
@@ -234,12 +232,9 @@ function SummaryCard({
 }) {
   const preview = useMemo(
     () =>
-      [...items]
-        .sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
-        .slice(0, SUMMARY_TITLE_COUNT),
+      [...items].sort((a, b) => Date.parse(b.date) - Date.parse(a.date)),
     [items],
   );
-  const more = Math.max(0, items.length - preview.length);
 
   return (
     <section id="digest-preview" className="bg-navy-950 px-5 pb-12 pt-2">
@@ -293,13 +288,9 @@ function SummaryCard({
                 </button>
               </span>
             ))}
-            {more > 0 && <span className="text-ivory/40">, …</span>}
           </motion.p>
 
-          <div className="mt-4 flex items-center justify-between border-t border-navy-800 pt-3">
-            <span className="meta-label text-ivory/50">
-              {more > 0 ? `+${more} more` : ""}
-            </span>
+          <div className="mt-4 flex items-center justify-end border-t border-navy-800 pt-3">
             <Link
               to="/digest"
               className="group flex items-center gap-1 text-sm font-semibold text-gold-400 hover:text-gold-300"
