@@ -63,6 +63,19 @@ npm run dev      # dev server
 npm run build    # production build → dist/
 ```
 
+## Deploy on Railway
+
+The repo is deployment-ready — `railway.json` and `server.js` are included:
+
+1. Go to [railway.com](https://railway.com) → **New Project** → **Deploy from GitHub repo**
+2. Pick `Terrance-TT/choate-student-notes`
+3. Railway auto-detects `railway.json`:
+   - **Build:** `npm install && npm run build`
+   - **Start:** `node server.js` (serves `dist/` on the `PORT` Railway assigns)
+4. Add a domain (Settings → Networking → **Generate Domain**) to get your public URL
+
+That's the link to share with students — no sign-in needed to read.
+
 ## Notes
 
 - Image assets are inlined as base64 data URIs (`src/assets/img-*.ts`) — the repository is intentionally text-only.
